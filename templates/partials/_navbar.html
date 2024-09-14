@@ -6,7 +6,8 @@
         <div class="container">
           <div class="logo left">
             <!-- Logo -->
-            <img src="{% static './images/logo.png' %} " height="50", width="80">
+            <img src="{% static './images/man.png' %}" height="80px" width="90px">
+           
             
             </li>
           </div>
@@ -16,7 +17,7 @@
             <span></span>
           </div>
           <div class="menu left">
-            <div class="page-menu left">
+            <div class="page-menu right">
               <!-- Navigation -->
               <li><a href="{% url 'pages:index' %}">Home</a></li>
               <li><a href="{% url 'pages:about' %}">About</a></li>
@@ -24,16 +25,16 @@
               <li><a href="{% url 'listings:listings' %}">Properties</a></li>
               <li><a href="{% url 'Ages:Ages' %}">Verification</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li class=""><a href="{% url 'accounts:login_view' %}">Agents</a>
+                  <a href="{% url 'accounts:register_view' %}">
+                    <li class="main-btn pointer text-center animate">Become an agent</li>
+                  </a>
             </div>
             <div class="registration flex-center">
-              <div class="join-us">
-                <!-- Join Us Button -->
-                    <li class="pointer animate"><a href="{% url 'accounts:login_view' %}">Agents</a>
-                 </li>    
-                </div>
+              
                   <div class="getting-started">
                     <!-- Get Started Button -->
-                   <a href="{% url 'accounts:register_view' %}"><li class="main-btn pointer text-center animate">Become an agent</li></a>
+                 
                   </div>
                 </div>
                 <div class="registration flex-center">

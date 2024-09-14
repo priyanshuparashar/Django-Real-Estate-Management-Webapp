@@ -26,7 +26,7 @@ SECRET_KEY = '+=mb2q!t+yg7(m$!_$iki#2*z(+ub^lcas0jx$l2-dp%bp8pt)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['koralcity.herokuapp.com', '127.0.0.1','koralcity.org','www.koralcity.org']
+ALLOWED_HOSTS = ['Maan Housing.herokuapp.com', '127.0.0.1','Maan Housing.org','www.Maan Housing.org']
 
 
 # Application definition
@@ -152,7 +152,7 @@ MESSAGE_TAGS = {
 
 }
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 if 'DATABASE_URL' in os.environ:
     import dj_database_url

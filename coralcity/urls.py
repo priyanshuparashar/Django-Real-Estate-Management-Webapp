@@ -38,9 +38,11 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL,
+                          document_root=settings.STATIC_ROOT)
 
-
-admin.site.site_header ="Koralcity control panel"
+admin.site.site_header ="Maan Housing control panel"
 admin.site.index_title ="Administrators dashboard"
 admin.site.site_title ="Control panel"
 

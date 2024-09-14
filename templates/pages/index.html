@@ -4,6 +4,9 @@
 
 
 {% block header%}
+<div class="linkedin-banner">
+  <img src="{% static './images/banner.png' %}" alt="Banner">
+</div>
 
    <div class="hero">
         <div class="container">
@@ -11,13 +14,13 @@
             <div class="title">
               <!-- Hero Title -->
               <h1>Find Your New<br>Modern Apartment </h1>
-              <form action="{% url 'listings:search' %}">
+              <!-- <form action="{% url 'listings:search' %}">
               <div class="search lux-shadow">
-                <!-- Search -->
+              
                 <input class="left" name="keywords" type="text" placeholder="Keyword" value="{{ values.keywords }}">
                 <button class="search-btn left" type="submit">Search</button>
               </div>
-            </form>
+            </form> -->
             </div>
             <div class="hero-image">
               <div class="hero-image-info light-bg flex-center">
@@ -34,16 +37,22 @@
                 <div class="info flex-center">
                   <img src="" alt="">
                   <!-- Place -->
-                  <p><a href="{% url 'Ages:Ages' %}">AGIS Verification</p></a>
+                  <p><a href="{% url 'Ages:Ages' %}">Rent</p></a>
                 </div>
+                  <div class="info flex-center">
+                    <img src="" alt="">
+                    <!-- Place -->
+                    <p><a href="{% url 'Ages:Ages' %}">Plot</p></a>
+                  </div>
+                    <div class="info flex-center">
+                      <img src="" alt="">
+                      <!-- Place -->
+                      <p><a href="{% url 'Ages:Ages' %}">Commercial</p></a>
+                    </div>
               </div>
             </div>
-            <div class="slide-down text-center pointer">
-              <a href="#about">
-                 <p>Scroll Down</p> 
-                <img src="{%static './images/scroll.svg'%}" alt="">
-              </a>
-            </div>
+            
+          
           </div>
         </div>
       </div>
@@ -55,7 +64,38 @@
   <!-- Alerts -->
               {% include 'partials/_alerts.html' %}
   <!-- Listings -->
+  <section id="counter" class="sec-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 ">
+          <div class="count"> <span class="fa fa-smile-o"></span>
+            <p class="number">126</p>
+            <h4>Happy Clients</h4>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="count"> <span class="fa fa-smile-o"></span>
+            <p class="number">535</p>
+            <h4>Awards</h4>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="count"> <span class="fa fa-smile-o"></span>
+            <p class="number">896</p>
+            <h4>Total Hours</h4>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="count"> <span class="fa fa-smile-o"></span>
+            <p class="number">777</p>
+            <h4>Projects Complete</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
    <section id="appartments" class="appartments">
+    
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -70,7 +110,7 @@
                   <img class="card-img-top" src="{{ listing.photo_main.url}}" alt="">
                   <div class="card-img-overlay">
                     <h2>
-                      <span class="badge price Black-text">₦{{listing.price | intcomma}}</span>
+                      <span class="badge price Black-text">₹{{listing.price | intcomma}}</span>
                     </h2>
                   </div>
                   <div class="card-body">
@@ -161,19 +201,19 @@
           <i class="fas fa-home  fa-3x mr-3"></i>
           <hr>
           <h3>Consulting Services</h3>
-          <p style=" text-align:justify-all;"> KoralCity Limited gives specialized investment and financial advice to clients looking to buy, sell or invest in property. We'll work closely with you throughout the process of buying and selling of your properties.</p>
+          <p style=" text-align:justify-all;"> Maan Housing Limited gives specialized investment and financial advice to clients looking to buy, sell or invest in property. We'll work closely with you throughout the process of buying and selling of your properties.</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-key fa-3x mr-3"></i>
           <hr>
           <h3>Property Management</h3>
-          <p style=" text-align:justify-all;">At KoralCity Limited, we handle the operations, maintenance, and administration of properties rentals for the owners and also market rentals rates at competitive price while complying with rental laws.</p>
+          <p style=" text-align:justify-all;">At Maan Housing Limited, we handle the operations, maintenance, and administration of properties rentals for the owners and also market rentals rates at competitive price while complying with rental laws.</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-money-bill-alt fa-3x mr-3"></i>
           <hr>
           <h3>Renting & Selling</h3>
-          <p style=" text-align:justify-all;">Our property managers at KoralCity Limited set competitive rent prices and strategies to attract clients to the property for rent or sell very fast with the first impression on  potential clients . </p>
+          <p style=" text-align:justify-all;">Our property managers at Maan Housing Limited set competitive rent prices and strategies to attract clients to the property for rent or sell very fast with the first impression on  potential clients . </p>
         </div>
       </div>
     </div>
