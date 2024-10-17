@@ -25,10 +25,12 @@
               <li><a href="{% url 'listings:listings' %}">Properties</a></li>
               <li><a href="{% url 'Ages:Ages' %}">Verification</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li class=""><a href="{% url 'accounts:login_view' %}">Agents</a>
+              <li class=""><a href="{% url 'accounts:login_view' %}">Agents</a></li>
+               <li>
                   <a href="{% url 'accounts:register_view' %}">
-                    <li class="main-btn pointer text-center animate">Become an agent</li>
+                    <button type="button" class="btn btn-warning">Become an Agent</button>
                   </a>
+                  </li>
             </div>
             <div class="registration flex-center">
               
